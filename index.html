@@ -1,35 +1,57 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>School Wall</title>
+  <link rel="icon" type="image/png" href="ic_launcher.png" sizes="144x144">
   <style>
     body {
       margin: 0;
-      background: #000;
-      color: #fff;
+      background-color: #f2f2f2;
+      font-family: "Noto Sans SC", sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      font-family: "Segoe UI", sans-serif;
       text-align: center;
     }
-    img {
-      max-width: 90%;
-      border-radius: 16px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    header {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
-    h1 {
-      margin-top: 24px;
-      font-weight: 400;
-      opacity: 0.8;
+    header img {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+    }
+    main img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    p {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <img src="photo.jpg" alt="School Wall">
-  <h1>孩子们，你们想我了吗</h1>
+  <header>
+    <img src="ic_launcher.png" alt="icon">
+    <span><strong>School Wall</strong></span>
+  </header>
+
+  <main>
+    <img src="photo.jpg" alt="photo">
+    <p>孩子们，你们还想我吗</p>
+  </main>
 </body>
 </html>
